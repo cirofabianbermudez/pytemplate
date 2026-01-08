@@ -61,6 +61,18 @@ uv python pin 3.12
 this command updates the `.python-version` file. This file is used by `uv` for
 creating the `.venv/` with the correct version of Python.
 
+To view available and installed Python versions:
+
+```bash
+uv python list
+```
+
+To upgrade a Python version to the latest supported path release:
+
+```bash
+uv python upgrade 3.12
+```
+
 Create a Python project:
 
 ```bash
@@ -261,6 +273,7 @@ uv publish --token $TOKEN
 ## References
 
 - [uv GitHub](https://github.com/astral-sh/uv)
+- [uv Documentation](https://docs.astral.sh/uv/)
 - [Managing Python Projects With uv: An All-in-One Solution](https://realpython.com/python-uv/)
 
 
